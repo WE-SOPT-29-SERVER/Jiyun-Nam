@@ -1,12 +1,11 @@
 const person = new Object(); //빈 객체 생성
 
-person.name="이름"; //점표기법 접근
+person.name="남지윤"; //점표기법 접근
 person.part="Server";
 person["group"]="YB"; //브라켓 표기법 접근
 person.sayHello=function(){
     console.log(`안녕하세요 ${this.name} 입니다.`);
 }
-
 console.log(typeof person);
 console.log(person);
 
@@ -18,7 +17,7 @@ console.log("====================");
 const emptyObject={}; //빈 객체 생성
 console.log(typeof emptyObject);
 
-/*
+
 const animal={
     animalType:"dog",
     animallName:"뽀삐",
@@ -37,7 +36,8 @@ console.log(animal);
 animal.bark();
 animal.thisFriends();
 
-*/
+
+/*
 const animal = {
     animalType: "dog",
     animalName: "뽀삐",
@@ -51,7 +51,7 @@ const animal = {
         });
     },
 };
-
+*/
 console.log(animal);
 animal.bark();
 animal.thisFriends(animal.animalFriends);
