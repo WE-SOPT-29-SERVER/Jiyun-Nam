@@ -35,5 +35,5 @@ const encrypt = (salt, password) => {
 };
 
 const password = "fl0wer";
-const salt = crypto.randomBytes(32).toString("hex");
+const salt = crypto.randomBytes(32).toString("hex"); //랜덤바이트 생성
 encrypt(salt, password);
