@@ -1,3 +1,4 @@
+/*
 const express=require("express");
 
 const router=express.Router();
@@ -29,6 +30,7 @@ router.post('/signup', (req, res)=>{
         return res.status(400).send(util.fail(400, "BAD REQUEST")); */
 
         //statusCode.js랑 responseMessage.js 불러와서 사용 -> 유지보수에 편함
+        /*
         return res
             .status(statusCode.BAD_REQUEST)
             .send(util.fail(statusCode.BAD_REQUEST, responseMessage.NULL_VALUE));
@@ -85,3 +87,4 @@ router.post("/login", async(req, res)=>{ //async 쓰는 이유 : await 곧 사�
 module.exports=router;
 
 
+*/

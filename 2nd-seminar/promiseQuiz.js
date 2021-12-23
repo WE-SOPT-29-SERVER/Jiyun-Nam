@@ -45,6 +45,14 @@ getYB(members).then(getOffline).then(console.log);
 //마지막 부분 async,await으로 변경
 const asyncFunc = async(members)=>{
   const onlineMembers = await getOnline(members);
-  const offlineMembers = await getOB(onlineMembers);
-  console.log(onlineObMembers)
+  const onlineObMembers = await getOB(onlineMembers);
+  console.log(onlineObMembers);
 }
+
+const asyncFunc2 = async(members)=>{
+  const YBMembers = await getYB(members);
+  const offlineYBMembers = await getOffline(YBMembers);
+  console.log(offlineYBMembers);
+}
+asyncFunc();
+asyncFunc2();
